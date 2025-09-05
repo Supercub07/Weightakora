@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEIGHTAKORA - Healthy Diet Plans by Kalpana</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        .plan-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center">
+                        <i class="fas fa-weight text-2xl text-purple-600 mr-2"></i>
+                        <span class="font-bold text-xl text-gray-800">WEIGHTAKORA</span>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6 text-gray-500" x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-purple-600 font-medium">Home</a>
+                    <a href="#plans" class="text-gray-600 hover:text-purple-600 transition">Plans</a>
+                    <a href="#about" class="text-gray-600 hover:text-purple-600 transition">About</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-purple-600 transition">Success Stories</a>
+                    <a href="#contact" class="text-gray-600 hover:text-purple-600 transition">Contact</a>
+                    <a href="#signup" class="bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700 transition">Sign Up</a>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden mobile-menu md:hidden">
+            <ul class="px-2 pt-2 pb-4 space-y-2">
+                <li><a href="#home" class="block px-2 py-1 text-gray-800 hover:bg-purple-50 rounded">Home</a></li>
+                <li><a href="#plans" class="block px-2 py-1 text-gray-800 hover:bg-purple-50 rounded">Plans</a></li>
+                <li><a href="#about" class="block px-2 py-1 text-gray-800 hover:bg-purple-50 rounded">About</a></li>
+                <li><a href="#testimonials" class="block px-2 py-1 text-gray-800 hover:bg-purple-50 rounded">Success Stories</a></li>
+                <li><a href="#contact" class="block px-2 py-1 text-gray-800 hover:bg-purple-50 rounded">Contact</a></li>
+                <li><a href="#signup" class="block px-2 py-1 text-purple-600 font-medium">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- <section id="home" class="hero-gradient py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center">
+                
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                         <div class="flex space-x-4">
+                        <a href="#plans" class="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition font-medium">
+                             Weight loss plan
+                        </a>
+                        <a href="#about" class="border border-purple-600 text-purple-600 px-6 py-3 rounded-lg hover:bg-purple-50 transition font-medium">
+                            Kids meal plan
+                        </a>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-6">
+                        Healthy Weight Loss for <span class="text-purple-600">Working Mothers</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Scientifically designed 50-day diet plans for postpartum weight loss and busy moms. Easy-to-follow recipes, meal charts, and instructional videos.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#plans" class="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition font-medium">
+                            View Plans
+                        </a>
+                        <a href="#about" class="border border-purple-600 text-purple-600 px-6 py-3 rounded-lg hover:bg-purple-50 transition font-medium">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Healthy food" class="rounded-lg shadow-xl w-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Example Header with logo -->
+
+<!-- Hero Section -->
+<section id="home" class="hero-gradient py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center md:items-start md:space-x-8">
+            
+            <!-- Left Content -->
+            <div class="w-full md:w-1/2 mb-10 md:mb-0 flex flex-col justify-between h-full">
+
+                <!-- Top CTA Buttons -->
+                <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4 mb-6">
+                    <a href="#plans" class="bg-purple-600 text-white px-6 py-3 rounded-lg text-center hover:bg-purple-700 transition font-medium">
+                        View Plans
+                    </a>
+                    <a href="#about" class="border border-purple-600 text-purple-600 px-6 py-3 rounded-lg text-center hover:bg-purple-50 transition font-medium">
+                        Learn More
+                    </a>
+                </div>
+
+                <!-- Title and Description -->
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-4 text-center md:text-left">
+                    Healthy Weight Loss for <span class="text-purple-600">Working Mothers</span>
+                </h1>
+                <p class="text-base sm:text-lg text-gray-600 mb-6 text-center md:text-left">
+                    Scientifically designed 50-day diet plans for postpartum weight loss and busy moms. Easy-to-follow recipes, meal charts, and instructional videos.
+                </p>
+
+                <!-- Bottom Plan Buttons -->
+                <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                    <a href="#plans" class="bg-purple-600 text-white px-6 py-3 rounded-lg text-center hover:bg-purple-700 transition font-medium">
+                        Weight loss plan
+                    </a>
+                    <a href="#about" class="border border-purple-600 text-purple-600 px-6 py-3 rounded-lg text-center hover:bg-purple-50 transition font-medium">
+                        Kids meal plan
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Image -->
+            <div class="w-full md:w-1/2 flex justify-center">
+                <div class="relative w-full max-w-md">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Healthy food" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Why Choose WEIGHTAKORA?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Our plans are designed specifically for the needs of working mothers and postpartum women</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg text-center">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-calendar-check text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">50-Day Structured Plan</h3>
+                    <p class="text-gray-600">Complete day-by-day meal plan with shopping lists and preparation guides.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg text-center">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-child text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Kids Meal Plans</h3>
+                    <p class="text-gray-600">Healthy, easy-to-make school meals that kids will actually enjoy eating.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg text-center">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-video text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Recipe Videos</h3>
+                    <p class="text-gray-600">Step-by-step video instructions for every recipe in your plan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <!-- <section id="plans" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Diet Plans</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Choose the perfect plan for your health goals</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"> -->
+                <!-- Plan 1 -->
+                <!-- <div class="bg-white rounded-xl shadow-md overflow-hidden plan-card transition duration-300">
+                    <div class="bg-purple-600 p-6 text-white">
+                        <h3 class="text-2xl font-bold">Postpartum Recovery</h3>
+                        <p class="opacity-80">50-Day Weight Loss Plan</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-3xl font-bold mb-4">₹2,999<span class="text-sm font-normal text-gray-500">/plan</span></div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Specially designed for new moms</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Nutrition for postpartum recovery</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Easy-to-make meals</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>50+ recipe videos</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Weekly shopping lists</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition font-medium">
+                            Get This Plan
+                        </button>
+                    </div>
+                </div> -->
+                
+                <!-- Plan 2 -->
+                <!-- <div class="bg-white rounded-xl shadow-md overflow-hidden plan-card transition duration-300">
+                    <div class="bg-pink-500 p-6 text-white">
+                        <h3 class="text-2xl font-bold">Working Mothers</h3>
+                        <p class="opacity-80">50-Day Busy Mom Plan</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-3xl font-bold mb-4">₹2,499<span class="text-sm font-normal text-gray-500">/plan</span></div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Quick & easy meal prep</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Office-friendly meals</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Energy-boosting foods</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Stress-reducing nutrition</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Time-saving cooking tips</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-pink-500 text-white py-3 rounded-lg hover:bg-pink-600 transition font-medium">
+                            Get This Plan
+                        </button>
+                    </div>
+                </div> -->
+                
+                <!-- Plan 3 -->
+                <!-- <div class="bg-white rounded-xl shadow-md overflow-hidden plan-card transition duration-300">
+                    <div class="bg-blue-500 p-6 text-white">
+                        <h3 class="text-2xl font-bold">Kids Meal Plan</h3>
+                        <p class="opacity-80">Healthy School Meals</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-3xl font-bold mb-4">₹1,999<span class="text-sm font-normal text-gray-500">/plan</span></div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Nutritious & kid-approved</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Quick morning prep</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Brain-boosting foods</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Allergy-friendly options</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Fun presentation ideas</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition font-medium">
+                            Get This Plan
+                        </button>
+                    </div>
+                </div> -->
+                <!-- Plan 4 -->
+                 <!-- <div class="bg-white rounded-xl shadow-md overflow-hidden plan-card transition duration-300">
+                    <div class="bg-blue-500 p-6 text-white">
+                        <h3 class="text-2xl font-bold">Kids Meal Plan</h3>
+                        <p class="opacity-80">Healthy School Meals</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-3xl font-bold mb-4">₹1,999<span class="text-sm font-normal text-gray-500">/plan</span></div>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Nutritious & kid-approved</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Quick morning prep</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Brain-boosting foods</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Allergy-friendly options</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Fun presentation ideas</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition font-medium">
+                            Get This Plan
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+      <!-- Plans Section -->
+  <section id="plans" class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">Choose Your Plan</h2>
+        <p class="text-gray-600">Scientifically crafted and practically tested for your lifestyle</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Plan cards -->
+        
+    <div class="bg-white rounded-xl shadow-md overflow-hidden plan-card transition duration-300">
+        <div class="bg-purple-500 p-6 text-white">
+            <h3 class="text-2xl font-bold">Postpartum Recovery</h3>
+            <p class="opacity-80">Customized Plan</p>
+        </div>
+        <div class="p-6">
+            <div class="text-3xl font-bold mb-4">₹2,999<span class="text-sm font-normal text-gray-500">/plan</span></div>
+            <ul class="space-y-3 mb-6">
+                
+        <li class="flex items-center">
+            <i class="fas fa-check text-green-500 mr-2"></i>
+            <span>Nutrition for postpartum moms</span>
+        </li>
+    
+
+        <li class="flex items-center">
+            <i class="fas fa-check text-green-500 mr-2"></i>
+            <span>Energy-boosting meals</span>
+        </li>
+    
+
+        <li class="flex items-center">
+            <i class="fas fa-check text-green-500 mr-2"></i>
+            <span>50+ recipe videos</span>
+        </li>
+    
+
+        <li class="flex items-center">
+            <i class="fas fa-check text-green-500 mr-2"></i>
+            <span>Easy to prepare</span>
+        </li>
+    
+
+        <li class="flex items-center">
+            <i class="fas fa-check text-green-500 mr-2"></i>
+            <span>Shopping lists included</span>
+        </li>
+    
+            </ul>
+            <button class="get-plan-btn w-full bg-purple-500 text-white py-3 rounded-lg hover:bg-purple-600 transition font-medium">
+                Get This Plan
+            </button>
+        </div>
+    </div>
+    
+    <div class="bg-white rounded-xl shadow-md overflow-hidden plan-card transition duration-300">
+        <div class="bg-pink-500 p-6 text-white">
+            <h3 class="text-2xl font-bold">Working Mothers Plan</h3>
+            <p class="opacity-80">Customized Plan</p>
+        </div>
+        <div class="p-6">
+            <div class="text-3xl font-bold mb-4">₹2,499<span class="text-sm font-normal text-gray-500">/plan</span></div>
+            <ul class="space-y-3 mb-6">
+                
+        <li class="flex items-center">
+            <i class="fas fa-check text-green-500 mr-2"></i>
+            <span>Office-friendly recipes</span>
+        </li>
+    
+
+        <li class="flex items-center">
+            <i class="fas fa-check text-green-500 mr-2"></i>
+            <span>Time-saving meal preparation</span>
+        </li>
+    
+
+        <li class="flex items-center">
+            <i class="fas fa-check text-green-500 mr-2"></i>
+            <span>Stress-reducing foods</span>
+        </li>
+    
+
+        <li class="flex items-center">
+            <i class="fas fa-check text-green-500 mr-2"></i>
+            <span>15-min meal ideas</span>
+        </li>
+    
+
+        <li class="flex items-center">
+            <i class="fas fa-check text-green-500 mr-2"></i>
+            <span>Quick weekly charts</span>
+        </li>
+    
+            </ul>
+            <button class="get-plan-btn w-full bg-pink-500 text-white py-3 rounded-lg hover:bg-pink-600 transition font-medium">
+                Get This Plan
+            </button>
+        </div>
+    </div>
+    
+    <div class="bg-white rounded-xl shadow-md overflow-hidden plan-card transition duration-300">
+        <div class="bg-blue-500 p-6 text-white">
+            <h3 class="text-2xl font-bold">Kids Meal preparation plan</h3>
+            <p class="opacity-80">Customized Plan</p>
+        </div>
+        <div class="p-6">
+            <div class="text-3xl font-bold mb-4">₹1,999<span class="text-sm font-normal text-gray-500">/plan</span></div>
+            <ul class="space-y-3 mb-6">
+                
+        <li class="flex items-center">
+            <i class="fas fa-check text-green-500 mr-2"></i>
+            <span>Tasty school lunch recipes</span>
+        </li>
+    
+
+        <li class="flex items-center">
+            <i class="fas fa-check text-green-500 mr-2"></i>
+            <span>Brain-boosting foods</span>
+        </li>
+    
+
+        <li class="flex items-center">
+            <i class="fas fa-check text-green-500 mr-2"></i>
+            <span>Quick morning meals</span>
+        </li>
+    
+
+        <li class="flex items-center">
+            <i class="fas fa-check text-green-500 mr-2"></i>
+            <span>Fun presentations</span>
+        </li>
+    
+
+        <li class="flex items-center">
+            <i class="fas fa-check text-green-500 mr-2"></i>
+            <span>Picky-eater friendly</span>
+        </li>
+    
+            </ul>
+            <button class="get-plan-btn w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition font-medium">
+                Get This Plan
+            </button>
+        </div>
+    </div>
+    
+    <div class="bg-white rounded-xl shadow-md overflow-hidden plan-card transition duration-300">
+        <div class="bg-green-500 p-6 text-white">
+            <h3 class="text-2xl font-bold">Aged People Plan</h3>
+            <p class="opacity-80">Customized Plan</p>
+        </div>
+        <div class="p-6">
+            <div class="text-3xl font-bold mb-4">₹2,299<span class="text-sm font-normal text-gray-500">/plan</span></div>
+            <ul class="space-y-3 mb-6">
+                
+        <li class="flex items-center">
+            <i class="fas fa-check text-green-500 mr-2"></i>
+            <span>Low-sodium recipes</span>
+        </li>
+    
+
+        <li class="flex items-center">
+            <i class="fas fa-check text-green-500 mr-2"></i>
+            <span>Diabetic-friendly meals</span>
+        </li>
+    
+
+        <li class="flex items-center">
+            <i class="fas fa-check text-green-500 mr-2"></i>
+            <span>Bone-strengthening foods</span>
+        </li>
+    
+
+        <li class="flex items-center">
+            <i class="fas fa-check text-green-500 mr-2"></i>
+            <span>Easy to chew and digest</span>
+        </li>
+    
+
+        <li class="flex items-center">
+            <i class="fas fa-check text-green-500 mr-2"></i>
+            <span>Joint-friendly ingredients</span>
+        </li>
+    
+            </ul>
+            <button class="get-plan-btn w-full bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 transition font-medium">
+                Get This Plan
+            </button>
+        </div>
+    </div>
+    
+      </div>
+    </div>
+  </section>
+
+  <!-- QR Modal -->
+  <div id="qr-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+    <div class="bg-white p-6 rounded-lg shadow-lg max-w-sm text-center relative">
+      <button onclick="document.getElementById('qr-modal').classList.add('hidden')" class="absolute top-2 right-2 text-gray-500 hover:text-black">
+        <i class="fas fa-times"></i>
+      </button>
+      <h3 class="text-lg font-bold mb-4">Scan to Pay</h3>
+      <img src="assets/qr.png" alt="QR Code" class="mx-auto mb-4 w-64 h-64 object-contain" />
+      <p class="text-gray-600">Use any UPI app to complete your payment</p>
+    </div>
+  </div>
+
+    <!-- About Section -->
+    <!-- <section id="about" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <img src="assets/kal.png" alt="Kalpana - Founder of WEIGHTAKORA" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">About Kalpana & WEIGHTAKORA</h2>
+                    <p class="text-gray-600 mb-4">
+                        After struggling with postpartum weight myself and seeing many working mothers facing similar challenges, I founded WEIGHTAKORA to provide practical, sustainable solutions.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        Our plans are based on nutritional science but designed for real-life situations - limited time, picky eaters, and the need for convenience without compromising health.
+                    </p>
+                    <div class="bg-purple-50 p-4 rounded-lg border-l-4 border-purple-600">
+                        <p class="text-purple-800 italic">
+                            "My mission is to help women regain their confidence and health through simple, effective nutrition plans that fit into their busy lives."
+                        </p>
+                        <p class="text-right font-medium mt-2">- Kalpana, Founder</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Success Stories</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Hear from mothers who transformed their health with WEIGHTAKORA</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Krithika" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Krithika</h4>
+                            <p class="text-gray-500 text-sm">Working Mother</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "After my second baby, I struggled to lose weight. WEIGHTAKORA's postpartum plan helped me shed 12kg in 3 months while keeping my energy up for work and family."
+                    </p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Doorathi" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Doorathi</h4>
+                            <p class="text-gray-500 text-sm">IT Professional</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "As a working mom, I never had time to cook elaborate meals. The office-friendly recipes saved me so much time while helping me lose 8kg sustainably."
+                    </p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Monicka" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Monicka</h4>
+                            <p class="text-gray-500 text-sm">Mother of Two</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "My kids used to throw away their lunch boxes. Now they actually eat and enjoy their school meals thanks to the kids meal plan!"
+                    </p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Sample Recipe Videos</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">See how easy and delicious our recipes are</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Video 1 -->
+            <div class="bg-gray-100 rounded-xl overflow-hidden shadow-lg">
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe 
+                        class="w-full h-full"
+                        src="https://www.youtube.com/embed/t9r4cHJF9ho"
+                        title="Recipe Video 1"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Quick Postpartum Recovery Smoothie</h3>
+                    <p class="text-gray-600">Packed with nutrients to support recovery and energy levels.</p>
+                </div>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="bg-gray-100 rounded-xl overflow-hidden shadow-lg">
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe 
+                        class="w-full h-full"
+                        src="https://www.youtube.com/embed/t9r4cHJF9ho"
+                        title="Recipe Video 2"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Healthy Kids' Lunchbox Idea</h3>
+                    <p class="text-gray-600">Fun, tasty, and nutritious meals for growing kids.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- CTA Section -->
+    <section id="signup" class="py-16 bg-purple-600 text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Start Your Health Journey?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto opacity-90">Join hundreds of mothers who have transformed their health with WEIGHTAKORA</p>
+            <div class="max-w-md mx-auto">
+                <form class="space-y-4">
+                    <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-300 text-gray-800">
+                    <input type="email" placeholder="Email Address" class="w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-300 text-gray-800">
+                    <select class="w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-300 text-gray-800">
+                        <option value="">Select a Plan</option>
+                        <option value="postpartum">Postpartum Recovery Plan</option>
+                        <option value="working">Working Mothers Plan</option>
+                        <option value="kids">Kids Meal Plan</option>
+                    </select>
+                    <button type="submit" class="w-full bg-white text-purple-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition">
+                        Get Started Now
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Frequently Asked Questions</h2>
+                <p class="text-gray-600">Everything you need to know about our plans</p>
+            </div>
+            <div class="space-y-4">
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-question w-full text-left p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none">
+                        <div class="flex justify-between items-center">
+                            <span class="font-medium">How soon will I see results with the postpartum plan?</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                        </div>
+                    </button>
+                    <div class="faq-answer hidden p-4 text-gray-600">
+                        Most mothers begin noticing changes within 2-3 weeks, with significant results typically visible by the end of the 50-day plan. Remember that postpartum weight loss should be gradual for health and breastfeeding considerations.
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-question w-full text-left p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none">
+                        <div class="flex justify-between items-center">
+                            <span class="font-medium">Are the recipes in the kids plan suitable for school lunch boxes?</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                        </div>
+                    </button>
+                    <div class="faq-answer hidden p-4 text-gray-600">
+                        Absolutely! All kids meal plan recipes are designed to be packed easily, stay fresh until lunchtime, and are approved by children in our test groups. We include tips for keeping food at the right temperature too.
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-question w-full text-left p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none">
+                        <div class="flex justify-between items-center">
+                            <span class="font-medium">How much time do the working mother recipes take to prepare?</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                        </div>
+                    </button>
+                    <div class="faq-answer hidden p-4 text-gray-600">
+                        Most recipes take 15-30 minutes of active preparation time. We focus on quick cooking methods, one-pot meals, and smart meal prep strategies to minimize kitchen time while maximizing nutrition.
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-question w-full text-left p-4 bg-gray-50 hover:bg-gray-100 focus:outline-none">
+                        <div class="flex justify-between items-center">
+                            <span class="font-medium">Do you offer customization for dietary restrictions?</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                        </div>
+                    </button>
+                    <div class="faq-answer hidden p-4 text-gray-600">
+                        Yes! Our plans include vegetarian options by default, and we provide substitution guides for common allergies (dairy, gluten, nuts). For specific needs, you can contact us for personalized recommendations.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Contact Us</h2>
+                    <p class="text-gray-600 mb-6">
+                        Have questions about which plan is right for you? Want customized advice? Reach out to our team.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Email</h4>
+                                <p class="text-gray-600">support@weightakora.com</p>
+                            </div>
+                        </div>
+                        <!-- <div class="flex items-start">
+                            <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone-alt text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Phone</h4>
+                                <p class="text-gray-600">+91 98765 43210</p>
+                            </div>
+                        </div> -->
+                        <!-- <div class="flex items-start">
+                            <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                <i class="fab fa-whatsapp text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">WhatsApp</h4>
+                                <p class="text-gray-600">+91 98765 43210</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <form class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-300">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-300">
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-300"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition font-medium">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-weight text-2xl text-purple-400 mr-2"></i>
+                        <span class="font-bold text-xl">WEIGHTAKORA</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Helping mothers achieve healthy weight loss through practical, sustainable nutrition plans.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#plans" class="text-gray-400 hover:text-white transition">Plans</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">About</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition">Success Stories</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Plans</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Postpartum Recovery</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Working Mothers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Kids Meal Plan</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Custom Plans</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-purple-600 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-purple-600 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-purple-600 transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-purple-600 transition">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400">
+                        Subscribe to our newsletter for health tips and special offers.
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 WEIGHTAKORA. All rights reserved. Founded by Kalpana.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // FAQ accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                // Toggle answer visibility
+                answer.classList.toggle('hidden');
+                
+                // Rotate icon
+                icon.classList.toggle('rotate-180');
+                
+                // Close other open answers
+                faqQuestions.forEach(q => {
+                    if (q !== question) {
+                        q.nextElementSibling.classList.add('hidden');
+                        q.querySelector('i').classList.remove('rotate-180');
+                    }
+                });
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+      document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.get-plan-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.getElementById('qr-modal').classList.remove('hidden');
+        });
+      });
+    });
+    </script>
+</body>
+</html>
